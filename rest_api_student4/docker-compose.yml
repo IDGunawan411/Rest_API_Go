@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  rest_api_full11:
+    container_name: rest_api_full11
+    image: app-gunawan
+    ports: 
+    - 127.0.0.1:7099:8000
+    environment: 
+    - db_user=root
+    - db_pass=123
+    - db_server=192.168.2.10:4300
